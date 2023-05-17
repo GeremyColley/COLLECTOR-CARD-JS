@@ -1,0 +1,27 @@
+body {
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+.App {
+  padding-left: 50px;
+}
+
+h2 {
+  color: white;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.images-container {
+  display: flex;
+  /* overflow: hidden; */
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.images-container::-webkit-scrollbar {
+  display: none;
+}
