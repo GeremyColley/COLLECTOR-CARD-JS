@@ -1,21 +1,14 @@
 import movies from "../assets/movies.json";
-import '../App.css'
+import Card from "./Card";
 
 const Cards = () => {
+    console.log(movies);
     return (
         <div>
-            {movies.map( (elem,index) => {
-                return (
-                    <section className="container">
-                        <p className="title">{elem.category}</p>
-                        <div className="movies-list">
-                            {elem.images.map((image, num) => {
-                                return <img key={num} src={image} alt="movie" />;
-                            })}
-                        </div>
-                    </section>
-                );
-            })};
+            <h2>Coucou Alice</h2>
+            {movies.map( (elem) => { return(
+                <Card titre={elem.category} list={elem.images} />)
+            })}
         </div>
     );
 };
