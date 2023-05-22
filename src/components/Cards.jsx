@@ -10,8 +10,8 @@ const Cards = () => {
     return (
         <div>
             <h2>Coucou Alice</h2>
-            {movies.map( (elem) => { return(
-                <Card titre={elem.category} list={elem.images} />)
+            {movies.map( (elem, index) => { return(
+                <Card titre={elem.category} list={elem.images} key={index} />)
             })}
         </div>
     );
